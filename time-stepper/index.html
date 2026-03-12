@@ -58,99 +58,105 @@
       <svg class="absolute inset-0 w-full h-full pointer-events-none" id="path-svg" preserveAspectRatio="none" style="z-index:0;"></svg>
 
       <!-- Step 01 — Hero Section — Left, peach -->
-      <div class="step-row flex justify-start mb-10 relative z-10" data-side="left">
-        <div class="step-card group relative w-64 sm:w-72" style="transform: rotate(-2deg);">
-          <!-- Push pin -->
-          <div class="pin absolute -top-4 left-1/2 -translate-x-1/2 z-20 transition-all duration-300 group-hover:scale-110">
-            <div class="w-5 h-5 rounded-full shadow-pin group-hover:shadow-pin-hover" style="background: radial-gradient(circle at 35% 30%, #ff8c5a, #e5522a);"></div>
-            <div class="w-1.5 h-3 mx-auto rounded-b-full" style="background: #c04420;"></div>
+      <div class="step-row flex justify-start mb-16 relative z-10" data-side="left">
+        <div class="step-card group relative w-56 sm:w-64" style="transform: rotate(-2deg);">
+          <!-- Push pin: centered at top of card -->
+          <div class="pin absolute top-0 left-1/2 z-20 transition-all duration-300 group-hover:scale-110" style="transform: translateX(-50%) translateY(-40%);">
+            <div class="w-7 h-7 rounded-full" style="background: radial-gradient(circle at 35% 28%, #ff9e72, #e5522a); box-shadow: 0 4px 14px rgba(229,82,42,0.45), inset 0 -2px 4px rgba(0,0,0,0.2);"></div>
+            <div class="w-2 h-3.5 mx-auto" style="background: linear-gradient(to bottom, #c04420, #8a2e10); border-radius: 0 0 2px 2px;"></div>
           </div>
-          <!-- Card -->
-          <div class="rounded-card shadow-card group-hover:shadow-card-hover group-hover:-translate-y-2 transition-all duration-300 ease-out p-6 pt-7 overflow-hidden"
-               style="background: linear-gradient(145deg, #fff8f4 0%, #ffeee2 55%, #ffffff 100%);">
-            <span class="block text-sm font-semibold mb-2" style="color: #e07040; font-variant-numeric: tabular-nums;">01</span>
-            <h2 class="text-xl font-bold text-gray-800 mb-2 leading-tight">Hero Section</h2>
-            <p class="text-sm text-gray-400 leading-relaxed">Address a key problem directly in the headline. Add a video/demo for instant engagement.</p>
+          <!-- Card: white base, colored gradient fills top ~55% fading to white -->
+          <div class="rounded-card shadow-card group-hover:shadow-card-hover group-hover:-translate-y-2 transition-all duration-300 ease-out overflow-hidden" style="background: #fff;">
+            <div class="px-5 pt-8 pb-5" style="background: linear-gradient(to bottom, #fde8d8 0%, #fdf0e8 50%, #ffffff 100%);">
+              <span class="block text-xs font-semibold mb-2 tracking-wide" style="color: #d96030;">01</span>
+              <h2 class="text-lg font-bold text-gray-800 mb-2 leading-snug">Hero Section</h2>
+              <p class="text-xs text-gray-400 leading-relaxed">Address a key problem directly in the headline. Add a video/demo for instant engagement.</p>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Step 02 — Advantages — Right, light blue -->
-      <div class="step-row flex justify-end mb-10 relative z-10" data-side="right">
-        <div class="step-card group relative w-64 sm:w-72" style="transform: rotate(1.5deg);">
-          <div class="pin absolute -top-4 left-1/2 -translate-x-1/2 z-20 transition-all duration-300 group-hover:scale-110">
-            <div class="w-5 h-5 rounded-full shadow-pin group-hover:shadow-pin-hover" style="background: radial-gradient(circle at 35% 30%, #7ab8f5, #3a87e0);"></div>
-            <div class="w-1.5 h-3 mx-auto rounded-b-full" style="background: #2a6bbf;"></div>
+      <div class="step-row flex justify-end mb-16 relative z-10" data-side="right">
+        <div class="step-card group relative w-56 sm:w-64" style="transform: rotate(1.5deg);">
+          <div class="pin absolute top-0 left-1/2 z-20 transition-all duration-300 group-hover:scale-110" style="transform: translateX(-50%) translateY(-40%);">
+            <div class="w-7 h-7 rounded-full" style="background: radial-gradient(circle at 35% 28%, #7ab8f5, #3a87e0); box-shadow: 0 4px 14px rgba(58,135,224,0.45), inset 0 -2px 4px rgba(0,0,0,0.2);"></div>
+            <div class="w-2 h-3.5 mx-auto" style="background: linear-gradient(to bottom, #2a6bbf, #1a4a8a); border-radius: 0 0 2px 2px;"></div>
           </div>
-          <div class="rounded-card shadow-card group-hover:shadow-card-hover group-hover:-translate-y-2 transition-all duration-300 ease-out p-6 pt-7 overflow-hidden"
-               style="background: linear-gradient(145deg, #f2f8ff 0%, #ddeeff 55%, #ffffff 100%);">
-            <span class="block text-sm font-semibold mb-2" style="color: #3a87e0;">02</span>
-            <h2 class="text-xl font-bold text-gray-800 mb-2 leading-tight">Advantages</h2>
-            <p class="text-sm text-gray-400 leading-relaxed">Showcase 3 main benefits of your product. Each benefit highlighted with a title and short description.</p>
+          <div class="rounded-card shadow-card group-hover:shadow-card-hover group-hover:-translate-y-2 transition-all duration-300 ease-out overflow-hidden" style="background: #fff;">
+            <div class="px-5 pt-8 pb-5" style="background: linear-gradient(to bottom, #d8eafc 0%, #e8f3fd 50%, #ffffff 100%);">
+              <span class="block text-xs font-semibold mb-2 tracking-wide" style="color: #3a87e0;">02</span>
+              <h2 class="text-lg font-bold text-gray-800 mb-2 leading-snug">Advantages</h2>
+              <p class="text-xs text-gray-400 leading-relaxed">Showcase 3 main benefits of your product. Each benefit highlighted with a title and short description.</p>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Step 03 — Apply Cases — Left, lavender -->
-      <div class="step-row flex justify-start mb-10 relative z-10" data-side="left">
-        <div class="step-card group relative w-64 sm:w-72" style="transform: rotate(-1deg);">
-          <div class="pin absolute -top-4 left-1/2 -translate-x-1/2 z-20 transition-all duration-300 group-hover:scale-110">
-            <div class="w-5 h-5 rounded-full shadow-pin group-hover:shadow-pin-hover" style="background: radial-gradient(circle at 35% 30%, #a88de8, #7c4fd4);"></div>
-            <div class="w-1.5 h-3 mx-auto rounded-b-full" style="background: #5e35b1;"></div>
+      <div class="step-row flex justify-start mb-16 relative z-10" data-side="left">
+        <div class="step-card group relative w-56 sm:w-64" style="transform: rotate(-1deg);">
+          <div class="pin absolute top-0 left-1/2 z-20 transition-all duration-300 group-hover:scale-110" style="transform: translateX(-50%) translateY(-40%);">
+            <div class="w-7 h-7 rounded-full" style="background: radial-gradient(circle at 35% 28%, #b59ff0, #7c4fd4); box-shadow: 0 4px 14px rgba(124,79,212,0.45), inset 0 -2px 4px rgba(0,0,0,0.2);"></div>
+            <div class="w-2 h-3.5 mx-auto" style="background: linear-gradient(to bottom, #5e35b1, #3d1f80); border-radius: 0 0 2px 2px;"></div>
           </div>
-          <div class="rounded-card shadow-card group-hover:shadow-card-hover group-hover:-translate-y-2 transition-all duration-300 ease-out p-6 pt-7 overflow-hidden"
-               style="background: linear-gradient(145deg, #f7f3ff 0%, #ece0ff 55%, #ffffff 100%);">
-            <span class="block text-sm font-semibold mb-2" style="color: #7c4fd4;">03</span>
-            <h2 class="text-xl font-bold text-gray-800 mb-2 leading-tight">Apply Cases</h2>
-            <p class="text-sm text-gray-400 leading-relaxed">Explain who benefits most from your product and show quick social proof.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Step 04 — Features — Right, peach/warm -->
-      <div class="step-row flex justify-end mb-10 relative z-10" data-side="right">
-        <div class="step-card group relative w-64 sm:w-72" style="transform: rotate(2deg);">
-          <div class="pin absolute -top-4 left-1/2 -translate-x-1/2 z-20 transition-all duration-300 group-hover:scale-110">
-            <div class="w-5 h-5 rounded-full shadow-pin group-hover:shadow-pin-hover" style="background: radial-gradient(circle at 35% 30%, #ffb97a, #e87a20);"></div>
-            <div class="w-1.5 h-3 mx-auto rounded-b-full" style="background: #c05e10;"></div>
-          </div>
-          <div class="rounded-card shadow-card group-hover:shadow-card-hover group-hover:-translate-y-2 transition-all duration-300 ease-out p-6 pt-7 overflow-hidden"
-               style="background: linear-gradient(145deg, #fffaf4 0%, #ffecd4 55%, #ffffff 100%);">
-            <span class="block text-sm font-semibold mb-2" style="color: #e87a20;">04</span>
-            <h2 class="text-xl font-bold text-gray-800 mb-2 leading-tight">Features</h2>
-            <p class="text-sm text-gray-400 leading-relaxed">List core functionalities and connect them to the benefits.</p>
+          <div class="rounded-card shadow-card group-hover:shadow-card-hover group-hover:-translate-y-2 transition-all duration-300 ease-out overflow-hidden" style="background: #fff;">
+            <div class="px-5 pt-8 pb-5" style="background: linear-gradient(to bottom, #e8deff 0%, #f0eaff 50%, #ffffff 100%);">
+              <span class="block text-xs font-semibold mb-2 tracking-wide" style="color: #7c4fd4;">03</span>
+              <h2 class="text-lg font-bold text-gray-800 mb-2 leading-snug">Apply Cases</h2>
+              <p class="text-xs text-gray-400 leading-relaxed">Explain who benefits most from your product and show quick social proof.</p>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Step 05 — Call To Action — Left, soft blue -->
-      <div class="step-row flex justify-start mb-10 relative z-10" data-side="left">
-        <div class="step-card group relative w-64 sm:w-72" style="transform: rotate(-1.5deg);">
-          <div class="pin absolute -top-4 left-1/2 -translate-x-1/2 z-20 transition-all duration-300 group-hover:scale-110">
-            <div class="w-5 h-5 rounded-full shadow-pin group-hover:shadow-pin-hover" style="background: radial-gradient(circle at 35% 30%, #6ec0f7, #2395e8);"></div>
-            <div class="w-1.5 h-3 mx-auto rounded-b-full" style="background: #1270c0;"></div>
+      <!-- Step 04 — Features — Right, warm peach -->
+      <div class="step-row flex justify-end mb-16 relative z-10" data-side="right">
+        <div class="step-card group relative w-56 sm:w-64" style="transform: rotate(2deg);">
+          <div class="pin absolute top-0 left-1/2 z-20 transition-all duration-300 group-hover:scale-110" style="transform: translateX(-50%) translateY(-40%);">
+            <div class="w-7 h-7 rounded-full" style="background: radial-gradient(circle at 35% 28%, #ffb97a, #e87a20); box-shadow: 0 4px 14px rgba(232,122,32,0.45), inset 0 -2px 4px rgba(0,0,0,0.2);"></div>
+            <div class="w-2 h-3.5 mx-auto" style="background: linear-gradient(to bottom, #c05e10, #8a4008); border-radius: 0 0 2px 2px;"></div>
           </div>
-          <div class="rounded-card shadow-card group-hover:shadow-card-hover group-hover:-translate-y-2 transition-all duration-300 ease-out p-6 pt-7 overflow-hidden"
-               style="background: linear-gradient(145deg, #f0f9ff 0%, #d6eeff 55%, #ffffff 100%);">
-            <span class="block text-sm font-semibold mb-2" style="color: #2395e8;">05</span>
-            <h2 class="text-xl font-bold text-gray-800 mb-2 leading-tight">Call To Action</h2>
-            <p class="text-sm text-gray-400 leading-relaxed">A clear CTA tailored to the user and product niche.</p>
+          <div class="rounded-card shadow-card group-hover:shadow-card-hover group-hover:-translate-y-2 transition-all duration-300 ease-out overflow-hidden" style="background: #fff;">
+            <div class="px-5 pt-8 pb-5" style="background: linear-gradient(to bottom, #fde8cc 0%, #fdf0e0 50%, #ffffff 100%);">
+              <span class="block text-xs font-semibold mb-2 tracking-wide" style="color: #e87a20;">04</span>
+              <h2 class="text-lg font-bold text-gray-800 mb-2 leading-snug">Features</h2>
+              <p class="text-xs text-gray-400 leading-relaxed">List core functionalities and connect them to the benefits.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 05 — Call To Action — Left, sky blue -->
+      <div class="step-row flex justify-start mb-16 relative z-10" data-side="left">
+        <div class="step-card group relative w-56 sm:w-64" style="transform: rotate(-1.5deg);">
+          <div class="pin absolute top-0 left-1/2 z-20 transition-all duration-300 group-hover:scale-110" style="transform: translateX(-50%) translateY(-40%);">
+            <div class="w-7 h-7 rounded-full" style="background: radial-gradient(circle at 35% 28%, #7ec8f8, #2395e8); box-shadow: 0 4px 14px rgba(35,149,232,0.45), inset 0 -2px 4px rgba(0,0,0,0.2);"></div>
+            <div class="w-2 h-3.5 mx-auto" style="background: linear-gradient(to bottom, #1270c0, #0a4a8a); border-radius: 0 0 2px 2px;"></div>
+          </div>
+          <div class="rounded-card shadow-card group-hover:shadow-card-hover group-hover:-translate-y-2 transition-all duration-300 ease-out overflow-hidden" style="background: #fff;">
+            <div class="px-5 pt-8 pb-5" style="background: linear-gradient(to bottom, #d4e8fc 0%, #e4f1fd 50%, #ffffff 100%);">
+              <span class="block text-xs font-semibold mb-2 tracking-wide" style="color: #2395e8;">05</span>
+              <h2 class="text-lg font-bold text-gray-800 mb-2 leading-snug">Call To Action</h2>
+              <p class="text-xs text-gray-400 leading-relaxed">A clear CTA tailored to the user and product niche.</p>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Step 06 — Testimonials — Right, soft purple -->
-      <div class="step-row flex justify-end mb-10 relative z-10" data-side="right">
-        <div class="step-card group relative w-64 sm:w-72" style="transform: rotate(1deg);">
-          <div class="pin absolute -top-4 left-1/2 -translate-x-1/2 z-20 transition-all duration-300 group-hover:scale-110">
-            <div class="w-5 h-5 rounded-full shadow-pin group-hover:shadow-pin-hover" style="background: radial-gradient(circle at 35% 30%, #c4a8f0, #9555d8);"></div>
-            <div class="w-1.5 h-3 mx-auto rounded-b-full" style="background: #7230b8;"></div>
+      <div class="step-row flex justify-end mb-16 relative z-10" data-side="right">
+        <div class="step-card group relative w-56 sm:w-64" style="transform: rotate(1deg);">
+          <div class="pin absolute top-0 left-1/2 z-20 transition-all duration-300 group-hover:scale-110" style="transform: translateX(-50%) translateY(-40%);">
+            <div class="w-7 h-7 rounded-full" style="background: radial-gradient(circle at 35% 28%, #d0b0f8, #9555d8); box-shadow: 0 4px 14px rgba(149,85,216,0.45), inset 0 -2px 4px rgba(0,0,0,0.2);"></div>
+            <div class="w-2 h-3.5 mx-auto" style="background: linear-gradient(to bottom, #7230b8, #4e1a88); border-radius: 0 0 2px 2px;"></div>
           </div>
-          <div class="rounded-card shadow-card group-hover:shadow-card-hover group-hover:-translate-y-2 transition-all duration-300 ease-out p-6 pt-7 overflow-hidden"
-               style="background: linear-gradient(145deg, #faf5ff 0%, #eedeff 55%, #ffffff 100%);">
-            <span class="block text-sm font-semibold mb-2" style="color: #9555d8;">06</span>
-            <h2 class="text-xl font-bold text-gray-800 mb-2 leading-tight">Testimonials</h2>
-            <p class="text-sm text-gray-400 leading-relaxed">Include real faces, ratings, or case studies for strong social proof.</p>
+          <div class="rounded-card shadow-card group-hover:shadow-card-hover group-hover:-translate-y-2 transition-all duration-300 ease-out overflow-hidden" style="background: #fff;">
+            <div class="px-5 pt-8 pb-5" style="background: linear-gradient(to bottom, #e8d8fc 0%, #f0e8fd 50%, #ffffff 100%);">
+              <span class="block text-xs font-semibold mb-2 tracking-wide" style="color: #9555d8;">06</span>
+              <h2 class="text-lg font-bold text-gray-800 mb-2 leading-snug">Testimonials</h2>
+              <p class="text-xs text-gray-400 leading-relaxed">Include real faces, ratings, or case studies for strong social proof.</p>
+            </div>
           </div>
         </div>
       </div>
