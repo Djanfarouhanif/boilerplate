@@ -165,7 +165,6 @@
   </div><!-- /max-w -->
 
   <script>
-    // Draw animated dashed SVG path connecting all cards
     function drawPath() {
       const container = document.getElementById('steps-container');
       const svg = document.getElementById('path-svg');
@@ -173,33 +172,47 @@
 
       if (!cards.length) return;
 
-      const containerRect = container.getBoundingClientRect();
+      // Use offsetTop/offsetLeft chain to get position relative to container
+      // instead of getBoundingClientRect which is affected by CSS transforms
+      function getOffsetRelativeTo(el, ancestor) {
+        let top = 0, left = 0;
+        let node = el;
+        while (node && node !== ancestor) {
+          top += node.offsetTop;
+          left += node.offsetLeft;
+          node = node.offsetParent;
+        }
+        return { top, left };
+      }
 
-      // Gather center-top and center-bottom of each card
       const points = cards.map(card => {
-        const r = card.getBoundingClientRect();
+        const pos = getOffsetRelativeTo(card, container);
+        const w = card.offsetWidth;
+        const h = card.offsetHeight;
         return {
-          x: r.left - containerRect.left + r.width / 2,
-          yTop: r.top - containerRect.top,
-          yBottom: r.top - containerRect.top + r.height,
-          yMid: r.top - containerRect.top + r.height / 2,
+          x: pos.left + w / 2,
+          yTop: pos.top,
+          yBottom: pos.top + h,
         };
       });
 
-      // Build a smooth cubic bezier path through midpoints
+      // Update SVG dimensions to match container
+      svg.setAttribute('width', container.offsetWidth);
+      svg.setAttribute('height', container.offsetHeight);
+      svg.style.width = container.offsetWidth + 'px';
+      svg.style.height = container.offsetHeight + 'px';
+
       let d = '';
       for (let i = 0; i < points.length - 1; i++) {
         const a = points[i];
         const b = points[i + 1];
         const startX = a.x;
-        const startY = a.yBottom + 16;
+        const startY = a.yBottom + 8;
         const endX = b.x;
-        const endY = b.yTop - 16;
+        const endY = b.yTop - 8;
         const midY = (startY + endY) / 2;
 
-        if (i === 0) {
-          d += `M ${startX} ${startY} `;
-        }
+        if (i === 0) d += `M ${startX} ${startY} `;
         d += `C ${startX} ${midY}, ${endX} ${midY}, ${endX} ${endY} `;
       }
 
@@ -226,7 +239,6 @@
       `;
     }
 
-    // Run after layout
     window.addEventListener('load', drawPath);
     window.addEventListener('resize', drawPath);
   </script>
